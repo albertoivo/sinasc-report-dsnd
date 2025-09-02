@@ -1,95 +1,87 @@
-# CRISP-DM Fase 1: Business Understanding
-## Dataset SINASC - Sistema de Informações sobre Nascidos Vivos
+# CRISP-DM Phase 1: Business Understanding
+## SINASC Dataset - Live Birth Information System
 
-### 1.1 Contexto do Negócio
+### 1.1 Business Context
 
-O Sistema de Informações sobre Nascidos Vivos (SINASC) representa uma das principais fontes de dados epidemiológicos do Brasil, operando oficialmente desde 1990. Este sistema foi desenvolvido pelo Ministério da Saúde com o propósito estratégico de coletar, processar e disseminar informações sobre nascimentos em todo território nacional.
+The Live Birth Information System (SINASC - Sistema de Informações sobre Nascidos Vivos) represents one of Brazil's primary epidemiological data sources, operating officially since 1990. This system was developed by the Ministry of Health with the strategic purpose of collecting, processing, and disseminating information about births throughout the national territory.
 
-**Características do Sistema:**
-- **Abrangência**: Nacional, cobrindo todos os estados e municípios brasileiros
-- **Implementação**: Gradual desde 1990, com consolidação a partir de 1994
-- **Confiabilidade**: Apresenta, em muitos municípios, registros mais completos que os dados do IBGE baseados em cartórios de registro civil
-- **Integração**: Fornece dados para todos os níveis do Sistema Único de Saúde (SUS)
+**System Characteristics:**
+- **Coverage**: National, covering all Brazilian states and municipalities
+- **Implementation**: Gradual since 1990, with consolidation from 1994 onwards
+- **Reliability**: Presents, in many municipalities, more complete records than IBGE data based on civil registry offices
+- **Integration**: Provides data for all levels of the Unified Health System (SUS)
 
-### 1.2 Objetivos de Negócio
+### 1.2 Business Objectives
 
-O SINASC foi concebido para atender múltiplos objetivos estratégicos na área da saúde pública:
+SINASC was designed to meet multiple strategic objectives in the public health area:
 
-#### Objetivos Primários:
-- **Monitoramento de Natalidade**: Acompanhar tendências demográficas e padrões de nascimento
-- **Vigilância Epidemiológica**: Identificar fatores de risco e indicadores de saúde materno-infantil
-- **Suporte à Gestão**: Fornecer dados para planejamento e avaliação de políticas públicas de saúde
+#### Primary Objectives:
+- **Natality Monitoring**: Track demographic trends and birth patterns
+- **Epidemiological Surveillance**: Identify risk factors and maternal-child health indicators
+- **Management Support**: Provide data for planning and evaluation of public health policies
 
-#### Objetivos Secundários:
-- **Avaliação de Programas**: Mensurar efetividade de intervenções em saúde materno-infantil
-- **Pesquisa Científica**: Subsidiar estudos epidemiológicos e de saúde pública
-- **Transparência Pública**: Disponibilizar informações para sociedade civil e pesquisadores
+#### Secondary Objectives:
+- **Program Evaluation**: Measure effectiveness of maternal-child health interventions
+- **Scientific Research**: Support epidemiological and public health studies
+- **Public Transparency**: Make information available to civil society and researchers
 
-### 1.3 Relevância para Análise de Dados
+### 1.3 Relevance for Data Analysis
 
-O dataset SINASC se destaca por suas características únicas:
+The SINASC dataset stands out for its unique characteristics:
 
-**Pontos Fortes:**
-- **Volume de Dados**: Milhões de registros anuais cobrindo nascimentos em todo o país
-- **Riqueza de Variáveis**: Informações detalhadas sobre mãe, gestação, parto e recém-nascido
-- **Histórico Longitudinal**: Mais de 30 anos de dados consistentes
-- **Padronização**: Estrutura uniforme nacionalmente
+**Strengths:**
+- **Data Volume**: Millions of annual records covering births throughout the country
+- **Variable Richness**: Detailed information about mother, pregnancy, delivery, and newborn
+- **Longitudinal History**: Over 30 years of consistent data
+- **Standardization**: Nationally uniform structure
 
-**Potencial Analítico:**
-- Identificação de padrões temporais e sazonais de nascimentos
-- Análise de fatores socioeconômicos e demográficos
-- Estudos de correlação entre variáveis de saúde materno-infantil
-- Desenvolvimento de modelos preditivos para indicadores de saúde
+**Analytical Potential:**
+- Identification of temporal and seasonal birth patterns
+- Analysis of socioeconomic and demographic factors
+- Studies of correlation between maternal-child health variables
+- Development of predictive models for health indicators
 
-### 1.4 Importância Estratégica
+### 1.4 Strategic Importance
 
-O monitoramento de nascimentos transcende a simples coleta estatística, constituindo-se em ferramenta fundamental para:
+Birth monitoring transcends simple statistical collection, constituting a fundamental tool for:
 
-- **Vigilância em Saúde**: Detecção precoce de problemas de saúde pública
-- **Planejamento de Recursos**: Dimensionamento de necessidades em saúde materno-infantil
-- **Avaliação de Políticas**: Mensuração do impacto de programas governamentais
-- **Pesquisa Científica**: Base para estudos epidemiológicos de alta qualidade
+- **Health Surveillance**: Early detection of public health problems
+- **Resource Planning**: Sizing needs in maternal-child health
+- **Policy Evaluation**: Measuring the impact of government programs
+- **Scientific Research**: Basis for high-quality epidemiological studies
 
-### 1.5 Questões de Pesquisa Potenciais
+### 1.5 Potential Research Questions
 
-Com base nas características do SINASC, algumas questões relevantes para análise incluem:
+Based on SINASC characteristics, some relevant questions for analysis include:
 
-- Quais fatores estão associados a melhores desfechos perinatais?
-- Como variáveis socioeconômicas influenciam indicadores de saúde materno-infantil?
-- Existem padrões geográficos ou temporais nos dados de nascimento?
-- É possível desenvolver modelos preditivos para identificação de gestações de risco?
+- Which factors are associated with better perinatal outcomes?
+- How do socioeconomic variables influence maternal-child health indicators?
+- Are there geographic or temporal patterns in birth data?
+- Is it possible to develop predictive models for identifying high-risk pregnancies?
 
-### 1.6 Delimitação do Escopo da Análise
+### 1.6 Analysis Scope Delimitation
 
-Para este estudo específico, será realizado um recorte temporal e geográfico dos dados do SINASC:
+For this specific study, a temporal and geographic subset of SINASC data will be analyzed:
 
-**Recorte Temporal:**
-- **Ano de análise**: 2022
-- **Justificativa**: Dados mais recentes disponíveis, permitindo análise atual da situação de saúde materno-infantil
+**Temporal Scope:**
+- **Analysis year**: 2022
+- **Justification**: Most recent available data, allowing current analysis of maternal-child health situation
 
-**Recorte Geográfico:**
-- **Estado**: Paraíba
-- **Justificativa**: Foco regional permite análise mais detalhada e específica das características locais, considerando particularidades socioeconômicas e demográficas do estado
+**Geographic Scope:**
+- **State**: Paraíba
+- **Justification**: Regional focus allows more detailed and specific analysis of local characteristics, considering socioeconomic and demographic particularities of the state
 
-**Vantagens desta Delimitação:**
-- **Homogeneidade**: Reduz variabilidade relacionada a diferenças regionais extremas
-- **Profundidade**: Permite análise mais detalhada das características específicas da Paraíba
-- **Viabilidade**: Volume de dados mais gerenciável para análise exploratória
-- **Relevância Local**: Resultados podem ter aplicação prática mais direta para políticas estaduais
+**Advantages of this Delimitation:**
+- **Homogeneity**: Reduces variability related to extreme regional differences
+- **Depth**: Allows more detailed analysis of Paraíba's specific characteristics
+- **Feasibility**: More manageable data volume for exploratory analysis
+- **Local Relevance**: Results may have more direct practical application for state policies
 
-**Limitações Assumidas:**
-- Resultados podem não ser generalizáveis para outros estados
-- Análise temporal limitada a um único ano
-- Impossibilidade de identificar tendências longitudinais
-
-### 1.7 Próximas Etapas
-
-Para as próximas fases do CRISP-DM, será necessário:
-- Definir objetivos específicos de análise com base nas questões de pesquisa
-- Realizar a compreensão detalhada dos dados da Paraíba em 2022 (Data Understanding)
-- Identificar limitações e desafios específicos do subset selecionado
-- Estabelecer critérios de sucesso para a análise regionalizada
+**Assumed Limitations:**
+- Results may not be generalizable to other states
+- Temporal analysis limited to a single year
+- Impossibility of identifying longitudinal trends
 
 ---
 
-*Este documento constitui a base conceitual para o desenvolvimento da análise de dados do SINASC, seguindo a metodologia CRISP-DM para garantir uma abordagem estruturada e orientada a resultados.*
+*This document constitutes the conceptual foundation for developing SINASC data analysis, following the CRISP-DM methodology to ensure a structured and results-oriented approach.*
