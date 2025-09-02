@@ -59,13 +59,36 @@ Com base nas características do SINASC, algumas questões relevantes para anál
 - Existem padrões geográficos ou temporais nos dados de nascimento?
 - É possível desenvolver modelos preditivos para identificação de gestações de risco?
 
-### 1.6 Próximas Etapas
+### 1.6 Delimitação do Escopo da Análise
+
+Para este estudo específico, será realizado um recorte temporal e geográfico dos dados do SINASC:
+
+**Recorte Temporal:**
+- **Ano de análise**: 2022
+- **Justificativa**: Dados mais recentes disponíveis, permitindo análise atual da situação de saúde materno-infantil
+
+**Recorte Geográfico:**
+- **Estado**: Paraíba
+- **Justificativa**: Foco regional permite análise mais detalhada e específica das características locais, considerando particularidades socioeconômicas e demográficas do estado
+
+**Vantagens desta Delimitação:**
+- **Homogeneidade**: Reduz variabilidade relacionada a diferenças regionais extremas
+- **Profundidade**: Permite análise mais detalhada das características específicas da Paraíba
+- **Viabilidade**: Volume de dados mais gerenciável para análise exploratória
+- **Relevância Local**: Resultados podem ter aplicação prática mais direta para políticas estaduais
+
+**Limitações Assumidas:**
+- Resultados podem não ser generalizáveis para outros estados
+- Análise temporal limitada a um único ano
+- Impossibilidade de identificar tendências longitudinais
+
+### 1.7 Próximas Etapas
 
 Para as próximas fases do CRISP-DM, será necessário:
 - Definir objetivos específicos de análise com base nas questões de pesquisa
-- Realizar a compreensão detalhada dos dados (Data Understanding)
-- Identificar limitações e desafios específicos do dataset
-- Estabelecer critérios de sucesso para a análise
+- Realizar a compreensão detalhada dos dados da Paraíba em 2022 (Data Understanding)
+- Identificar limitações e desafios específicos do subset selecionado
+- Estabelecer critérios de sucesso para a análise regionalizada
 
 ---
 
